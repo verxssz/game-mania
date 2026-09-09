@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mania Store - Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="index.html" class="login__logo">
+        <img src="img/logo-senai.svg" alt="Game Mania Store">
+    </a>
+
+    <main class="login">
+        <form class="login__form">
+            <h1 class="login__titulo">Bem-vindo!</h1>
+            <p class="login__subtitulo">Entre com sua conta para continuar</p>
+            <p class="login__mensagem" id="loginMensagem"></p>
+
+            <div class="login__campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="login__campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <a href="#" class="login__esqueci">Esqueceu sua senha?</a>
+
+            <button type="submit" class="login__botao">Entrar</button>
+
+            <p class="login__cadastro">
+                Não tem uma conta? <a href="#">Criar conta</a>
+            </p>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

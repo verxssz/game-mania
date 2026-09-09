@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Instrument Sans", sans-serif;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 20px 40px;
+    background-color: #0057B8;
+}
+
+.header__logo img {
+
+height: 40px;
+}
+
+.header__busca {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 12px 16px;
+}
+
+.header__busca input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.header__busca button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__acoes {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #ffffff;
+}
+
+.header__acao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0px;
+    background-color: #ffffff;
+}
+
+.menu__lista {
+    display: flex;
+    gap: 40px;
+}
+
+.menu__item a {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 40px;
+    background-color: #B3B3B3;
+}
+
+.banner__imagem {
+    flex: 1;
+}
+
+.banner__imagem img {
+    border-radius: 8px;
+}
+
+.banner__conteudo {
+    flex: 1;
+}
+
+.banner__titulo {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner__texto {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.banner__botao {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-weight: 500;
+}   
+
+.categorias {
+    padding: 60px 40px;
+}
+
+.categorias__titulos {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.categorias__lista {
+    display: flex;
+    gap: 24px;
+}
+
+.categoria-card {
+    flex: 1;
+    background-color: #303030;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.categoria-card img {
+    background-color: #B3B3B3;
+    padding: 24px;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+}
+
+.categoria-card__nome {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    font-weight: 500;
+}
+
+/* Produtos em destaque */
+.produtos {
+    padding: 60px 40px;
+}
+
+.produtos__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.produtos__lista {
+    display: flex;
+    gap: 20px;
+}
+
+.produto-card {
+    flex: 1;
+    background-color: #303030;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.produto-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.produto-card__info {
+    padding: 16px;
+}
+
+.produto-card__nome {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.produto-card__preco {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.produto-card__botao {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px 40px 30px;
+    background-color: #0057B8;
+    color: #ffffff;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.rodape__sobre,
+.rodape__contato,
+.rodape__links {
+    flex: 1;
+    min-width: 220px;
+}
+
+.rodape__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.rodape__sobre p,
+.rodape__contato p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.rodape__botao {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.rodape__redes {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.rodape__redes img {
+    width: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.rodape__lista-links li {
+    margin-bottom: 8px;
+}
+
+.rodape__copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+/* Login */
+.login__logo {
+    display: block;
+    padding: 32px 40px;
+}
+
+.login__logo img {
+    height: 40px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 104px);
+    padding: 40px;
+}
+
+.login__form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0057B8;
+    border-radius: 16px;
+    padding: 40px;
+    color: #ffffff;
+}
+
+.login__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login__subtitulo {
+    font-size: 15px;
+    color: #ffffff;
+    opacity: 0.85;
+    margin-bottom: 32px;
+}
+
+.login__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.login__campo label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login__campo input {
+    padding: 12px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.login__campo input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.login__esqueci {
+    align-self: flex-end;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: underline;
+    margin-bottom: 24px;
+}
+
+.login__botao {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.login__cadastro {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 24px;
+    color: #ffffff;
+}
+
+.login__cadastro a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.login__mensagem {
+    font-size: 14px;
+    margin-bottom: 16px;
+    min-height: 20px;
+}
+
+.login__mensagem--erro {
+    color: #ffb3b3;
+}
+
+.login__mensagem--sucesso {
+    color: #b3ffcc;
+}
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.toast--visivel {
+    opacity: 1;
+}
