@@ -7,6 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,23 +30,29 @@
                 <span>Carrinho</span>
             </a>
 
-            <a href="#" class="header__acao">
+            <a href="login.html" class="header__acao">
                 <img src="img/icone-conta.svg" alt="">
                 <span>Minha conta</span>
             </a>
         </div>
     </header>
 
-    <nav class="menu">
-        <ul class="menu__lista">
-            <li class="menu__item"><a href="index.html">Início</a></li>
-            <li class="menu__item"><a href="#">Computadores e notebooks</a></li>
-            <li class="menu__item"><a href="#">Consoles</a></li>
-            <li class="menu__item"><a href="#">Periféricos</a></li>
-            <li class="menu__item"><a href="#">Acessórios</a></li>
-            <li class="menu__item"><a href="#">Contato</a></li>
-        </ul>
-    </nav>
+<nav class="menu">
+    <button class="menu__toggle d-md-none" type="button"
+        data-bs-toggle="collapse" data-bs-target="#menuLista"
+        aria-controls="menuLista" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <ul class="menu__lista collapse d-md-flex" id="menuLista">
+        <li class="menu__item"><a href="index.html">Início</a></li>
+        <li class="menu__item"><a href="#">Computadores e notebooks</a></li>
+        <li class="menu__item"><a href="#">Consoles</a></li>
+        <li class="menu__item"><a href="#">Periféricos</a></li>
+        <li class="menu__item"><a href="#">Acessórios</a></li>
+        <li class="menu__item"><a href="#">Contato</a></li>
+    </ul>
+</nav>
 
 <main>
     <section class="banner">
@@ -181,6 +188,7 @@
     <div class="toast" id="toast"></div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
